@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href="thankyou.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+	<script src="//code.jquery.com/jquery-1.11.2.min.js">
+	</script>
+	<script src="jquery-2.1.4.js">
+	</script>
+    <title>Thanks!</title>
+</head>
+<body>
+    <h1>Thank you.</h1>  
+    <br>
+    <p>Your infromation will be processed is about 48 hours. You may go back to the website.</p>
+    <p>Please contact krishsuisun@gmail.com for further assistance.</p>
+    <br>
+    <a href="index.html" class="buyNowButton">Back to the main page.</a>
+
+
+    <div class="switch darkmode">Dark mode:              
+        <span class="inner-switch">OFF</span>
+    </div>
+    <script>
+
+        $( ".inner-switch" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+              $( "body" ).removeClass( "dark" );
+              $( ".inner-switch" ).text( "OFF" );
+            } else {
+              $( "body" ).addClass( "dark" );
+              $( ".inner-switch" ).text( "ON" );
+            }
+        });
+            </script>
+            <script src="script.js"></script>
+</body>
+</html>
