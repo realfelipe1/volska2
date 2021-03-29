@@ -20,7 +20,7 @@ body {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  transition: 0.3s all;
+  transition: 0.5s all;
 }
 .parallax{
   background-attachment: fixed;
@@ -75,6 +75,9 @@ hr {
 }
 
 .woo_newbugfix{
+  color:black;
+}
+.navbar-brand:hover{
   color:black;
 }
 .sticky + .content {
