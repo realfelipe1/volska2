@@ -1,0 +1,32 @@
+
+body {
+  background-color: #95c2de;
+  text-align: center;
+}
+
+h2{
+color:white;
+font-size: 67px;
+}
+a.button1{
+display:inline-block;
+padding:0.5em 3em;
+border:0.16em solid #FFFFFF;
+margin:0 0.3em 0.3em 0;
+box-sizing: border-box;
+text-decoration:none;
+text-transform:uppercase;
+font-family:'Roboto',sans-serif;
+font-weight:400;
+color:#FFFFFF;
+text-align:center;
+transition: all 0.15s;
+}
+a.button1:hover{
+color:#DDDDDD;
+border-color:#DDDDDD;
+}
+a.button:active{
+color:#BBBBBB;
+border-color:#BBBBBB;
+}
