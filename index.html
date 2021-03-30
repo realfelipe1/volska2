@@ -41,6 +41,8 @@
       <!-- :) -->
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://unpkg.com/jajax.js"></script>
+      <script src="https://unpkg.com/sass.js"></script>
    </head>
    <!-- oncontextmenu="return false" -->
    <body>
@@ -246,6 +248,33 @@
          
          	});
       </script>
+          <script>
+            // Compile SASS in the Browser
+            [].slice.call(document.querySelectorAll('link[type="text/scss"]'))
+                .forEach(function(link) {
+                    loadSass(link.href)
+                    .then(function(css) {
+                        var style = document.createElement('style');
+                        style.setAttribute('href', link.href);
+                        style.type = "text/css";
+                        style.innerText = css;
+                        link.parentNode.insertBefore(style, link);
+                        link.parentNode.removeChild(link);                    
+                    })
+                })
+            ;
+    
+            function loadSass(scss) {
+                return jajax('style.scss')
+                .then(function(scss) {
+                    return new Promise(function(resolve){
+                        Sass.compile(scss, function(result) {
+                            resolve(result.text);
+                        });
+                    })
+                });
+            }
+        </script>  
       <script>
          AOS.init();
       </script>
