@@ -42,6 +42,9 @@ html {
 textarea, input{
   color:black;
 }
+div{
+  
+}
 hr {
   border: 2px solid #f1f1f1;
   margin-top: -50px;
@@ -281,6 +284,7 @@ li a:hover{
 .about {
   display: block;
   align-items: center;
+  transition: 0.5s all;
   /* border: solid red; */
   height: 350px;
 
@@ -363,9 +367,25 @@ li a:hover{
 	background: url("a.jpg") no-repeat center;
 	background-size: cover;
   height: 100%;
-
+  cursor: default;
 }
-
+.buyNowButton{
+  margin: 0px;
+  border: 2px solid rgba(34, 172, 236, 0.959);
+  border-radius: 5px;
+  padding: 5px;
+  background-color:cornflowerblue;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway';
+  transition: all 0.2s;
+}
+.buyNowButton:hover{
+  color:white;
+  background-color: rgb(28, 146, 224);
+  font-family: 'Raleway';
+  border: 2px solid rgb(28, 146, 224);
+}
 .right{
 	padding: 25px 40px;
 }
@@ -489,6 +509,7 @@ vertical-align: top;
 .deal img{
   border: black solid 2px;
    border-radius: 20px;
+   cursor: default;
 }
 .bottom .right{
 padding-right: 120px;
