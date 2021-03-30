@@ -2,8 +2,11 @@
 body {
   background-color: #95c2de;
   text-align: center;
+  font-family: 'Raleway';
 }
-
+.mar{
+  padding-bottom: 90px;
+}
 h2{
 color:white;
 font-size: 67px;
@@ -12,6 +15,9 @@ h3{
   color:white;
   font-size: 19px;
   }
+  h4{
+    color:white;
+    }
 a.button1{
 display:inline-block;
 padding:0.5em 3em;
