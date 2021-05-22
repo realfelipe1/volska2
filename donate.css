@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700);
+:root{
+  --blue: #01ACD6;
+  --dark: rgb(44, 44, 44);
+  --exdark: rgb(36, 35, 35);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Raleway';
+  list-style: none;
+  transition: 0.1s all ease;
+}
+
+body{
+  overflow-x: hidden;
+  background: white;
+}
+
+
+.checkout-body{
+	padding: 10rem 0rem;
+}
+
+.checkout-title{
+  font-size: 4.1rem;
+  font-weight: 600;
+  letter-spacing: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+form{
+  width: 700px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-input{
+	width: 100%;
+	justify-content: space-between !important;
+}
+
+.card-option{
+	display: flex;
+	flex-direction: column;
+	margin: 0px 30px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.card-option input{
+	height: 20px;
+	width: 20px;
+	margin-bottom: 7px;
+	cursor: pointer;
+}
+
+.card-option label{
+	font-size: 1.2rem;
+	font-weight: bolder;
+}
+
+.form-row{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 20px 0px;
+}
+
+.form-row .input-container{
+	flex: 1;
+}
+
+.name-inputs .input-container:nth-child(1){
+	margin-right: 40px;
+}
+
+.input-container label{
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.input{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.input .input-icon{
+	width: 60px;
+	height: 50px;
+	background: #C4C4C4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.input input{
+	width: 100%;
+	padding: 15px 20px;
+	height: 50px;
+	outline: none;
+	border: none;
+	background: rgb(241, 241, 241);
+	font-size: 1rem;
+}
+
+.input input:focus .input-icon{
+	background: var(--blue);
+	color: white;
+}
+
+.red{
+  color: red;
+}
+
+.input-icon i{
+  font-size: 25px;
+}
+
+.card-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.question-container label{
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.message{
+  outline: none;
+  border: none;
+  background: rgb(241, 241, 241);
+  width:100%;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+.submit-button button{
+	outline: none;
+	border: none;
+	letter-spacing: 0.3rem;
+	color: white;
+	background: var(--blue);
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	padding: 10px 40px;
+	cursor: pointer;
+	margin-top: 20px;
+	transition: all 0.5s ease;
+  }
+  
+  .submit-button button:hover{
+	  transform: translateY(-10px);
+	  padding: 10px 85px;
+  }
+
+  .dark nav .logo{
+	color: white;
+  }
+  
+  .dark .nav-links li a {
+	  font-size: 1.2rem;
+	  letter-spacing: 0.1rem;
+	  color: rgb(255, 255, 255);
+  }
+
+  .dark i{
+	  color: var(--dark);
+  }
+
+  .dark strong{
+	  color: rgb(255, 32, 32);
+  }
+
+  
+
+  @media screen and (max-width: 1800px) {
+	  .nav-links li a{
+		  font-size: 1rem;
+	  }
+  }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volska | Checkout</title>
+    <link href="donate.css" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" type="text/css" href="mediaquery.css">
+    <link rel="icon" type="image/png" href="volskaLogo.png">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/index">
+        <h2 class="logo">Volska</h2>
+      </a>
+
+      <ul class="nav-links">
+        <li><a class="nav-link" href="/index#home">Home</a></li>
+        <li><a class="nav-link" href="/index#about">About</a></li>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="/index#reviews">Reviews</a></li>
+        <li><a class="nav-link" href="/index#contact">Contact</a></li>
+        <li><a class="nav-link" href="/catalog">Catalog</a></li>
+        <li><a class="nav-link" href="/news">Updates</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line three"></div>
+      </div>
+    </nav>
+
+    <div class="checkout-body">
+      <h1 class="checkout-title">Checkout</h1>
+
+      <form action="/thankyou">
+				<div class="form-row card-input">
+					<div class="card-option">
+						<input type="radio" name="card-radio" id="">
+						<label for="">Debit</label>
+					</div>
+
+					<div class="card-option">
+						<input type="radio" name="card-radio" id="">
+						<label for="">Credit</label>
+					</div>
+
+					<div class="card-option">
+						<input type="radio" name="card-radio" id="">
+						<label for="">PayPal</label>
+					</div>
+				</div>
+
+        <div class="name-inputs form-row">
+          <div class="input-container">
+            <label for="" class="text-inputs">First name <strong class="red">*</strong></label>
+
+            <div class="input">
+              <div class="input-icon"><i class="fas fa-user"></i></div>
+              <input type="text" required>
+            </div>
+          </div>
+					
+          <div class="input-container">
+            <label for="" class="text-inputs">Last name <strong class="red">*</strong></label>
+
+            <div class="input">
+              <div class="input-icon"><i class="fas fa-user"></i></div>
+              <input type="text" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="email-input form-row">
+          <div class="input-container">
+            <label for="" class="text-inputs">Email <strong class="red">*</strong></label>
+
+            <div class="input">
+              <div class="input-icon"><i class="fas fa-envelope"></i></div>
+              <input type="email" required>
+            </div>
+          </div>
+        </div>
+
+				<div class="phone-input form-row">
+          <div class="input-container">
+            <label for="" class="text-inputs">Phone Number<strong class="red">*</strong></label>
+
+            <div class="input">
+              <div class="input-icon"><i class="fas fa-phone"></i></div>
+              <input type="text" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="credit-input form-row">
+          <div class="input-container">
+            <label for="" class="text-inputs">Credit Card Number<strong class="red">*</strong></label>
+						
+            <div class="input">
+              <div class="input-icon"><i class="far fa-credit-card"></i></div>
+              <input type="text" required>
+            </div>
+          </div>
+        </div>
+
+				<div class="questions-input form-row">
+					<div class="question-container">
+						<label for="" class="text-inputs">Questions/Comments</label>
+					
+						<textarea name="" id="" cols="30" rows="10" class = "message"></textarea>
+					</div>
+				</div>
+
+				<div class="form-row submit-button">
+					<button type = "submit">Purchase</button>
+				</div>
+
+      </form>
+      <div class="toggle">
+        <div id="dark_mOde" class="switch darkmode display_none"> <span class="dark-mode-label">Dark Mode:</span> <span class="inner-switch" id="button23">OFF</span> </div>
+      </div>
+      <script src="script.js"></script>
+      <script>
+        $(document).scroll(function() {
+          var y = $(this).scrollTop();
+        
+        
+          if (y < 180) {
+            // Dont show button in headding
+            $('.darkmode').fadeOut();
+          } else {
+            // Display dark mode button
+            $('.darkmode').fadeIn();
+        
+            if (y > 2660) {
+              // Always show white Dark Mode text if in footer
+              $('.darkmode').css('color', 'white');
+              $('.dark-mode-label').css('color', 'white');
+            } else if ($('body').hasClass('dark')) {
+              // If darkmode is on display white text
+              $('.darkmode').css('color', 'white');
+              $('.dark-mode-label').css('color', 'white');
+            } else {
+              $('.darkmode').css('color', 'black');
+              $('.dark-mode-label').css('color', 'black');
+            }
+           }
+          });
+      </script>
+    </div>
+  </body>
+</html>

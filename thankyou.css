@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+
+html, body{
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+.centertime{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.buyNowButton{
+    margin: 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s;
+}
+.buyNowButton:hover{
+    color:white;
+    background-color: rgb(28, 146, 224);
+    border: 2px solid rgb(28, 146, 224);
+}
+
+  .dark .buyNowButton{
+      background:rgb(28, 146, 224);
+      color: white;
+  }
+    /*** Works on common browsers ***/
+    ::selection {
+        background-color: #15b2e2;
+        color: rgb(0, 0, 0);
+    }
+    
+    /*** Mozilla based browsers ***/
+    ::-moz-selection {
+      background-color: #15b2e2;
+      color: rgb(0, 0, 0);
+    }
+    
+    /***For Other Browsers ***/
+    ::-o-selection {
+      background-color: #15b2e2;
+      color: rgb(0, 0, 0);
+    }
+    
+    ::-ms-selection {
+      background-color: #15b2e2;
+      color: rgb(0, 0, 0);
+    }
+    
+    /*** For Webkit ***/
+    ::-webkit-selection {
+      background-color: #15b2e2;
+      color: rgb(0, 0, 0);
+    }
