@@ -1,0 +1,368 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700);
+:root {
+  --dark: rgb(44, 44, 44);
+  --exdark: rgb(31, 33, 34);
+  --blue: #01ACD6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  list-style: none;
+  transition: 0.5s all;
+  font-family: 'Raleway';
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body{
+  
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 2.3rem 10%;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.185);
+  backdrop-filter: blur(2px);
+  height: 0;
+  z-index: 99;
+}
+
+nav .logo {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+nav .logo a:hover {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 10px 10px;
+}
+
+.nav-links li a {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  color: rgb(0, 0, 0);
+}
+
+.nav-links li a:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: rgb(0, 0, 0);
+  transition: width .3s;
+}
+
+.nav-links li a:hover:after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.burger {
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+
+.burger .line {
+  width: 25px;
+  height: 2px;
+  background: black;
+  margin: 5px 0px;
+  z-index: 9999;
+  transition: all 0.2s ease;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+
+nav .drop-btn{
+  border-radius: 5px;
+  line-height: 55px;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.nav-link-more{
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.nav-link-more:hover{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav .drop-btn span{
+  line-height: 50px;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+nav .tooltip.show{
+  display: block;
+}
+nav .wrapper-nav{
+  position: absolute;
+  top: 65px;
+  right: 65px;
+  display: flex;
+  width: 400px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #242526;
+  display: none;
+  transition: all 0.3s ease;
+}
+nav .wrapper-nav.show{
+  display: flex;
+}
+.wrapper-nav ul{
+  width: 400px;
+  list-style: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.wrapper-nav ul li{
+  line-height: 55px;
+}
+.wrapper-nav ul li a{
+  position: relative;
+  color: #b0b3b8;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  text-decoration: none;
+}
+.wrapper-nav ul li:hover a{
+  background: #3A3B3C;
+}
+ul li a .icon{
+  height: 40px;
+  width: 40px;
+  margin-right: 13px;
+  background: #ffffff1a;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li a .icon span{
+  line-height: 40px;
+  font-size: 20px;
+  color: #b0b3b8;
+}
+ul li a i{
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  pointer-events: none;
+}
+
+.nerd1{
+  color: inherit;
+}
+
+.wrapper-nav ul.setting-drop{
+  display: none;
+}
+
+.wrapper-nav .arrow{
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #b0b3b8;
+  cursor: pointer;
+}
+.wrapper-nav .arrow span{
+  margin-right: 15px;
+}
+
+#dark_icon{
+  width: 50px;
+}
+
+#newsfeed {
+  padding: 7rem 5rem;
+}
+
+.update {
+  width: 500px;
+  min-height: 400px;
+  /* overflow-y: auto; */
+  background-color: var(--dark);
+  color: aliceblue;
+  padding: 35px 25px;
+  margin: 20px 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.update>* {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.updates {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.link li a {
+  color: white;
+  padding: 0.2rem 0.9rem;
+  position: relative;
+}
+
+.link li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: rgb(255, 255, 255);
+  opacity: 0;
+  transform: scaleX(0);
+  transition: all .5s cubic-bezier(1, .25, 0, .75) 0s;
+}
+
+.link li a:hover:before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 1600px) {
+  .footer-section {
+    width: 100%;
+  }
+  .copyright-credits-container {
+    width: 100%;
+  }
+}
+
+.dark nav .logo {
+  color: white;
+}
+
+.dark .nav-links li a {
+  letter-spacing: 0.1rem;
+  color: rgb(255, 255, 255);
+}
+
+.dark .title {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+ ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(170, 169, 169);
+  border-radius: 9px;
+}
+
+ ::-webkit-scrollbar-thumb {
+  background: var(--dark);
+  border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+  background: rgb(82, 81, 81);
+}
+
+
+/*** Works on common browsers ***/
+
+ ::selection {
+  background-color: var(--blue);
+  color: rgb(0, 0, 0);
+}
+
+
+/*** Mozilla based browsers ***/
+
+ ::-moz-selection {
+  background-color: var(--blue);
+  color: rgb(0, 0, 0);
+}
+
+
+/***For Other Browsers ***/
+
+ ::-o-selection {
+  background-color: var(--blue);
+  color: rgb(0, 0, 0);
+}
+
+ ::-ms-selection {
+  background-color: var(--blue);
+  color: rgb(0, 0, 0);
+}
+
+
+/*** For Webkit ***/
+
+ ::-webkit-selection {
+  background-color: var(--blue);
+  color: rgb(0, 0, 0);
+}
+
+.dark nav .drop-btn{
+  border-radius: 5px;
+  line-height: 55px;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+.dark .nav-link-more{
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: default;
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volska | Donate</title>
+    <link href="donate.css" rel="stylesheet">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="mediaquery.css">
+    <link rel="icon" type="image/png" href="img/volskaLogo.png">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <nav data-aos="fade-down" data-aos-duration="600" data-aos-delay="780">
+      <a href="/index">
+        <h2 class="logo">Volska</h2>
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#faq">FAQ</a></li>
+        <li><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="/catalog">Catalog</a></li>
+      </ul>
+      <li><a class="nav-link-more" href="javascript:void(0)">More</a></li>
+      <div class="drop-btn">
+         <span class="fas fat fa-caret-down"></span>
+      </div>
+      <div class="tooltip"></div>
+      <div class="wrapper-nav">
+        <ul class="menu-bar">
+          <li class="help-item">
+            <a href="/news">
+              <div class="icon">
+                <span class="fas fa-user-edit"></span>
+              </div>
+              <span>Updates</span> <i class="fas fa-angle-right"></i>
+            </a>
+          </li>
+          <li class="setting-item">
+            <a href="javascript:void(0)">
+              <div class="icon">
+                <span class="fas fa-cog"></span>
+              </div>
+              <span>Settings (Languages & more soon)</span> <i class="fas fa-angle-right"></i>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-comment-alt"></span>
+              </div>
+              <span></span> 
+            </a>
+          </li>
+        </ul>
+      -->
+        <ul class="setting-drop">
+          <li class="arrow back-setting-btn"><span class="fas fa-arrow-left"></span>Settings</li>
+          <li>
+            <a href="/index">
+              <div class="icon">
+                <span class="fas fa-globe-asia nerd1"></span>
+              </div>
+              <span>English</span>
+            </a>
+          </li>
+          <li>
+            <a href="languages/es/es">
+              <div class="icon">
+                <span class="fas fa-globe-asia"></span>
+              </div>
+              <span>Spanish</span>
+            </a>
+          </li>
+          <li>
+            <a href="/languages/fr/fr">
+              <div class="icon">
+                <span class="fas fa-globe-asia"></span>
+              </div>
+              <span>French</span>
+            </a>
+          </li>
+          <li>
+            <a href="/languages/ro/ro">
+              <div class="icon">
+                <span class="fas fa-globe-asia"></span>
+              </div>
+              <span>Romanian</span>
+            </a>
+          </li>
+          <li>
+            <a href="/languages/ru/ru">
+              <div class="icon">
+                <span class="fas fa-globe-asia"></span>
+              </div>
+              <span>Russian</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas"></span>
+              </div>
+              <span></span>
+            </a>
+          </li> -->
+        </ul>
+        <!-- <ul class="help-drop">
+          <li class="arrow back-help-btn"><span class="fas fa-arrow-left"></span>text</li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-question-circle"></span>
+              </div>
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-envelope"></span>
+              </div>
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-comment-alt"></span>
+              </div>
+              <span></span> 
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-exclamation-circle"></span>
+              </div>
+              <span></span> 
+            </a>
+          </li>
+        </ul> -->
+      </div>
+      <img data-aos="fade-down" data-aos-duration="600" data-aos-delay="780" src="dark_non-toggle.png" alt="darkmode" id="dark-icon">
+      <div class="burger">
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line three"></div>
+      </div>
+    </nav>
+
+    <div class="checkout-body">
+      <h1 class="checkout-title">Donate</h1>
+
+      <form action="/thankyou">
+				<div class="form-row card-input">
+					<div class="card-option">
+						<input type="radio" name="card-radio" id="">
+						<label for="">Debit</label>
+					</div>
+
+					<div class="card-option">
+						<input type="radio" name="card-radio" id="">
+						<label for="">Credit</label>
+					</div>
+
+					<div class="card-option">
+						<input type="radio" name="card-radio" id="">
+						<label for="">PayPal</label>
+					</div>
+				</div>
+
+        <div class="name-inputs form-row">
+          <div class="input-container">
+            <label for="" class="text-inputs">First name <strong class="red">*</strong></label>
+
+            <div class="input">
+              <div class="input-icon"><i class="fas fa-user"></i></div>
+              <input type="text" required>
+            </div>
+          </div>
+					
+          <div class="input-container">
+            <label for="" class="text-inputs">Last name <strong class="red">*</strong></label>
+
+            <div class="input">
+              <div class="input-icon"><i class="fas fa-user"></i></div>
+              <input type="text" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="email-input form-row">
+          <div class="input-container">
+            <label for="" class="text-inputs">Email <strong class="red">*</strong></label>
+
+            <div class="input">
+              <div class="input-icon"><i class="fas fa-envelope"></i></div>
+              <input type="email" required>
+            </div>
+          </div>
+        </div>
+
+				<div class="phone-input form-row">
+          <div class="input-container">
+            <label for="" class="text-inputs">Phone Number<strong class="red">*</strong></label>
+
+            <div class="input">
+              <div class="input-icon"><i class="fas fa-phone"></i></div>
+              <input type="text" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="credit-input form-row">
+          <div class="input-container">
+            <label for="" class="text-inputs">Credit Card Number<strong class="red">*</strong></label>
+						
+            <div class="input">
+              <div class="input-icon"><i class="far fa-credit-card"></i></div>
+              <input type="text" required>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="credit-input form-row">
+          <div class="input-container">
+            <label for="" class="text-inputs">Amount<strong class="red">*</strong></label>
+						
+            <div class="input">
+              <div class="input-icon"><i class="far fa-credit-card"></i></div>
+              <input type="text" required>
+            </div>
+          </div>
+        </div>
+
+
+
+				<div class="questions-input form-row">
+					<div class="question-container">
+						<label for="" class="text-inputs">Questions/Comments</label>
+					
+						<textarea name="" id="" cols="30" rows="10" class = "message"></textarea>
+					</div>
+				</div>
+
+				<div class="form-row submit-button">
+					<button type = "submit">Purchase</button>
+				</div>
+
+      </form>
+      <!-- <div class="toggle">
+        <div id="dark_mOde" class="switch darkmode display_none"> <span class="dark-mode-label">Dark Mode:</span> <span class="inner-switch" id="button23">OFF</span> </div>
+      </div> -->
+      <script src="js/dark.js"></script>
+      <script src="js/refresh.js"></script>
+      <script src="js/drop.js"></script>
+      <!-- <script>
+        $(document).scroll(function() {
+          var y = $(this).scrollTop();
+        
+        
+          if (y < 180) {
+            // Dont show button in headding
+            $('.darkmode').fadeOut();
+          } else {
+            // Display dark mode button
+            $('.darkmode').fadeIn();
+        
+            if (y > 2660) {
+              // Always show white Dark Mode text if in footer
+              $('.darkmode').css('color', 'white');
+              $('.dark-mode-label').css('color', 'white');
+            } else if ($('body').hasClass('dark')) {
+              // If darkmode is on display white text
+              $('.darkmode').css('color', 'white');
+              $('.dark-mode-label').css('color', 'white');
+            } else {
+              $('.darkmode').css('color', 'black');
+              $('.dark-mode-label').css('color', 'black');
+            }
+           }
+          });
+      </script> -->
+    </div>
+  </body>
+</html>

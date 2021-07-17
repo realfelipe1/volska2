@@ -1,0 +1,400 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway';
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.1s all ease;
+  --dark: rgb(51, 51, 51);
+  --exdark: rgb(31, 33, 34);
+  --blue: #01ACD6;
+}
+
+
+nav .drop-btn{
+	border-radius: 5px;
+	line-height: 55px;
+	font-size: 1.4rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+	padding: 0 20px;
+  }
+  
+  .nav-link-more{
+	font-size: 0.9rem;
+	color: rgb(0, 0, 0);
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	cursor: default;
+  }
+  
+  .nav-link-more:hover{
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+  }
+  
+  nav .drop-btn span{
+	line-height: 50px;
+	font-size: 1.4rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	cursor: pointer;
+  }
+  nav .tooltip.show{
+	display: block;
+  }
+  nav .wrapper-nav{
+	position: absolute;
+	top: 65px;
+	right: 65px;
+	display: flex;
+	width: 400px;
+	overflow: hidden;
+	border-radius: 5px;
+	background: #242526;
+	display: none;
+	transition: all 0.3s ease;
+  }
+  nav .wrapper-nav.show{
+	display: flex;
+  }
+  .wrapper-nav ul{
+	width: 400px;
+	list-style: none;
+	padding: 10px;
+	transition: all 0.3s ease;
+  }
+  .wrapper-nav ul li{
+	line-height: 55px;
+  }
+  .wrapper-nav ul li a{
+	position: relative;
+	color: #b0b3b8;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 0 10px;
+	display: flex;
+	border-radius: 8px;
+	align-items: center;
+	text-decoration: none;
+  }
+  .wrapper-nav ul li:hover a{
+	background: #3A3B3C;
+  }
+  ul li a .icon{
+	height: 40px;
+	width: 40px;
+	margin-right: 13px;
+	background: #ffffff1a;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border-radius: 50%;
+  }
+  ul li a .icon span{
+	line-height: 40px;
+	font-size: 20px;
+	color: #b0b3b8;
+  }
+  ul li a i{
+	position: absolute;
+	right: 10px;
+	font-size: 25px;
+	pointer-events: none;
+  }
+  
+  .nerd1{
+	color: inherit;
+  }
+  
+  .wrapper-nav ul.setting-drop{
+	display: none;
+  }
+  
+  .wrapper-nav .arrow{
+	padding-left: 10px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #b0b3b8;
+	cursor: pointer;
+  }
+  .wrapper-nav .arrow span{
+	margin-right: 15px;
+  }
+
+.title-member{
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: 0.8rem;
+  padding-top: 4%;
+	margin-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+}
+
+.plans{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.plan{
+  width: 370px;
+  height: 430px;
+  border-radius: 0.5rem;
+	background: #EDEDED;
+	margin: 20px;
+  text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 30px 40px;
+	justify-content: center;
+	overflow-y: hidden;
+	position: relative;
+}
+
+.plan-title-info{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.plan .save-money-label{
+	position: absolute;
+	right: 10%;
+	top: -4%;
+	text-transform: uppercase;
+  font-size: 11px;
+	background: rgb(185, 221, 233);
+	height: 57px;
+	width: 135px;
+	border-radius: 5px;
+}
+
+.plan .save-money-label .save-money-text{
+	position: absolute;
+	left: 50%;
+	bottom: 15%;
+	text-align: center;
+	transform: translate(-50%, -15%);
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.plan .save-money-label .save-money-text span{
+  font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+}
+
+.plan .plan-name{
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.plan .cost{
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.plan .cost .year-info{
+  color: rgb(175, 175, 175);
+	font-size: 80%;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+}
+
+.plan-perks{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.plan-perk{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 8px 0px;
+}
+
+.plan-perk i{
+	margin-right: 8px;
+	background: #9FEBAC;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10px;
+}
+
+.plan-perk i.not-perk{
+  background: rgba(196, 38, 38, 0.24);
+	color: rgb(83, 83, 83);
+}
+
+.plan-perk p{
+  margin: 5px 0px;
+}
+
+.plan .purchase-link{
+  background-color: lightblue;
+  color: rgb(49, 48, 48);
+  border-radius: 0.2rem;
+  padding: 0.6rem 2rem;
+	width: 50%;
+  text-transform: uppercase;
+	font-weight: 500;
+	transition: all 0.5s ease;
+}
+
+.plan .purchase-link:hover{
+	transform: translateY(-8px);
+}
+
+.plan3{
+  background: rgb(179, 206, 224);
+  height: 470px;
+}
+
+.plan3 .purchase-link{
+  background: #7CA0BA;
+  color: white;
+}
+
+.plan3 .best-selling{
+  background: #7CA0BA;
+  color: white;
+  border-radius: 30px;
+  padding: 3px 10px;
+  text-transform: uppercase;
+	margin-bottom: 10px;
+	font-size: 90%;
+}
+
+.plan3 .plan-title-info .year-info{
+	color: rgba(49, 49, 49, 0.459);
+}
+
+.plan3 .best-selling span{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.plan3 .save-money-label{
+	background: #7CA0BA;
+	color: white;
+}
+
+#dark-icon{
+	width: 31px;
+	cursor: pointer;
+	object-fit: contain;
+	display: flex;
+	align-items: center;
+	transition: 0.3s all ease;
+  }
+
+body.dark{
+	  background-color: var(--exdark);
+	  color: white;
+  }
+
+.dark .plan{
+	color: black;
+}
+
+.dark .title-member, .dark .nav-links li a, .dark .logo{
+	color: white;
+}
+
+.dark .plan{
+	background-color: rgb(44, 44, 44);
+	color: white;
+}
+
+.dark .plan-perk i{
+	color:rgb(31, 33, 34);
+}
+
+
+.dark .plan-perk i.not-perk{
+	background: rgb(180, 62, 62);
+	color:rgb(31, 33, 34);
+}
+
+.dark .plan .save-money-label .save-money-text{
+	color: black;
+}  
+
+.dark .plan .cost .year-info{
+	color: rgb(148, 148, 148);
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+  }
+  
+   ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px rgb(170, 169, 169);
+	border-radius: 9px;
+  }
+  
+   ::-webkit-scrollbar-thumb {
+	background: var(--dark);
+	border-radius: 10px;
+  }
+  
+   ::-webkit-scrollbar-thumb:hover {
+	background: rgb(82, 81, 81);
+  }
+  
+  
+  /*** Works on common browsers ***/
+  
+   ::selection {
+	background-color: var(--blue);
+	color: rgb(0, 0, 0);
+  }
+  
+  
+  /*** Mozilla based browsers ***/
+  
+   ::-moz-selection {
+	background-color: var(--blue);
+	color: rgb(0, 0, 0);
+  }
+  
+  
+  /***For Other Browsers ***/
+  
+   ::-o-selection {
+	background-color: var(--blue);
+	color: rgb(0, 0, 0);
+  }
+  
+   ::-ms-selection {
+	background-color: var(--blue);
+	color: rgb(0, 0, 0);
+  }
+  
+  
+  /*** For Webkit ***/
+  
+   ::-webkit-selection {
+	background-color: var(--blue);
+	color: rgb(0, 0, 0);
+  }
